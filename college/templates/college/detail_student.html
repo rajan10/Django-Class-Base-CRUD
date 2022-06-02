@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail Student View</title>
+</head>
+
+<body>
+<table style="border:1px solid">
+    <thead>
+     <th >SN</th><th>FirstName</th><th>LastName</th><th>Address</th>  <th>Phone</th> <th>Parent ID</th><th>E-mail</th>
+   <th>Go Back</th>
+    </thead>
+    <tbody>
+
+    <tr><td>{{ forloop.counter }}. </td>
+        <td>{{ object.first_name }}<td>
+        <td>{{ object.last_name }} </td>
+        <td>{{ object.address }} </td>
+        <td>{{ object.phone }} </td>
+        <td>{{ object.parent_id }} </td>
+           <td>{{ object.email }} </td>
+        <td><a href="{% url 'index'  %}">Detail Home page</a> </td>
+
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
